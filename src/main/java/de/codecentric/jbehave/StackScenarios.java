@@ -31,8 +31,8 @@ public class StackScenarios extends JUnitStories {
         .useStoryReporterBuilder(
             new StoryReporterBuilder()
                 .withFormats(Format.CONSOLE)
-//        .withReporters(new LogCollector())
-        );
+                .withFormats(Format.HTML)
+                .withFormats(Format.XML));
   }
 
   @Override
