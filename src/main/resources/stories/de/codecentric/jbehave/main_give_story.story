@@ -1,4 +1,4 @@
-Scenario: DEMO-1 main scenario
+Scenario:DEMO-26 main scenario
 GivenStories: de/codecentric/jbehave/Precondition.story
 Given an empty stack
 When the string Java is added
