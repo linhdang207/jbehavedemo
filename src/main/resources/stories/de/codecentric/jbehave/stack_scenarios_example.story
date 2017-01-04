@@ -4,7 +4,7 @@ As a development team
 I would like to use an interface and implementation in Java directly
  
  
-Scenario:Ex-2  Stack search
+Scenario:Ex-29 Stack search
  
 Given an empty stack
 When the string Java is added
