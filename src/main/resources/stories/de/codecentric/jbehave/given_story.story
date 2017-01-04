@@ -4,7 +4,7 @@ As a development team
 I would like to use an interface and implementation in Java directly
  
 GivenStories: de/codecentric/jbehave/stack_scenarios_example.story,de/codecentric/jbehave/Precondition.story
-Scenario:DEMO-2  Stack search given
+Scenario:DEMO-25  Stack search given
 
 Given an empty stack
 When the string Java is added
