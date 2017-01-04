@@ -16,7 +16,8 @@ public class Https {
   private static final String SERVICE_PATH = "listener/plugin/logs";
 
   //~ class members ===========================================================
-  private Https() {}
+  private Https() {
+  }
 
   /**
    * Send test log to server.
@@ -46,8 +47,9 @@ public class Https {
       }
 
       // read stream.
-      try(Reader in = new BufferedReader(new InputStreamReader(connection.getInputStream(), "UTF-8"))) {
-        while (in.read() >= 0) {}
+      try (Reader in = new BufferedReader(new InputStreamReader(connection.getInputStream(), "UTF-8"))) {
+        while (in.read() >= 0) {
+        }
       }
     } catch (Exception ex) {
       ex.printStackTrace();

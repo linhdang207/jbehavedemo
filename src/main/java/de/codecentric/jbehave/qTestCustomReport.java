@@ -12,7 +12,7 @@ import java.util.Map;
  * Created by thongmgnguyen on 12/7/2016.
  */
 public class qTestCustomReport extends NullStoryReporter {
-//  public void storyNotAllowed(Story story, String filter) {
+  //  public void storyNotAllowed(Story story, String filter) {
 //    System.out.print("storyNotAllowed");
 //  }
 //
@@ -20,10 +20,11 @@ public class qTestCustomReport extends NullStoryReporter {
   private ExamplesTable table;
 
   public void beforeStory(Story story, boolean givenStory) {
-    System.out.println("beforeStory " + story.getName() +  " " + givenStory);
+    System.out.println("beforeStory " + story.getName() + " " + givenStory);
     this.story = story;
   }
-//
+
+  //
   public void afterStory(boolean givenStory) {
     System.out.println("afterStory " + givenStory);
   }
@@ -84,7 +85,7 @@ System.out.println("storyNotAllowed");
 //  }
 
   public void failed(String step, Throwable cause) {
-    System.out.println("step: " + step + " failed " );
+    System.out.println("step: " + step + " failed ");
     System.out.println("cause: " + cause);
   }
 

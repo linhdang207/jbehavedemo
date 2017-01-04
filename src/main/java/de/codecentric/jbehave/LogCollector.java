@@ -41,6 +41,7 @@ public class LogCollector extends NullStoryReporter {
       this.story = story;
     }
   }
+
   //
   public void afterStory(boolean givenStory) {
 
@@ -66,6 +67,7 @@ public class LogCollector extends NullStoryReporter {
   public void example(Map<String, String> tableRow) {
     this.table.getRows().indexOf(tableRow);
   }
+
   public void afterExamples() {
 
   }
@@ -100,7 +102,6 @@ public class LogCollector extends NullStoryReporter {
   }
 
 
-
   /**
    * @return the log base path of log attachment.
    */
@@ -114,7 +115,6 @@ public class LogCollector extends NullStoryReporter {
 
     return logBasePath;
   }
-
 
 
   /**
@@ -133,6 +133,7 @@ public class LogCollector extends NullStoryReporter {
     return jobInstanceId;
   }
   //~ class helpers ===========================================================
+
   /**
    * TestRun
    *
@@ -295,16 +296,16 @@ public class LogCollector extends NullStoryReporter {
      * @return the quote value.
      */
     private static String quote(String string) {
-      if(string != null && string.length() != 0) {
+      if (string != null && string.length() != 0) {
         char c = 0;
         int len = string.length();
         StringBuffer sb = new StringBuffer(len + 4);
         sb.append('\"');
 
-        for(int i = 0; i < len; ++i) {
+        for (int i = 0; i < len; ++i) {
           char b = c;
           c = string.charAt(i);
-          switch(c) {
+          switch (c) {
             case '\b':
               sb.append("\\b");
               break;
@@ -326,14 +327,14 @@ public class LogCollector extends NullStoryReporter {
               sb.append(c);
               break;
             case '/':
-              if(b == 60) {
+              if (b == 60) {
                 sb.append('\\');
               }
 
               sb.append(c);
               break;
             default:
-              if(c >= 32 && (c < 128 || c >= 160)) {
+              if (c >= 32 && (c < 128 || c >= 160)) {
                 sb.append(c);
               } else {
                 String t = "000" + Integer.toHexString(c);
