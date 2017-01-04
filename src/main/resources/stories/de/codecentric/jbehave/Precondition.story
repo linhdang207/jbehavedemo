@@ -1,4 +1,4 @@
-Scenario: precondition scenario
+Scenario: DEMO-24 precondition scenario
 Given an empty stack
 When the string Java is added
 And the string C++ is added
