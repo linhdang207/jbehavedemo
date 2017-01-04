@@ -4,7 +4,7 @@ As a development team
 I would like to use an interface and implementation in Java directly
  
  
-Scenario:DEMO-1  Basic functionality of a Stack 
+Scenario:DEMO-27  Basic functionality of a Stack 
  
 Given an empty stack
 When the string Java is added
@@ -12,7 +12,7 @@ And the string C++ is added
 And the last element is removed again
 Then the resulting element should be Java
 
-Scenario:DEMO-2  Stack search 
+Scenario:DEMO-28  Stack search 
  
 Given an empty stack
 When the string Java is added
