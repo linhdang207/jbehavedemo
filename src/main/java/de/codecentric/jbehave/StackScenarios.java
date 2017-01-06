@@ -37,7 +37,7 @@ public class StackScenarios extends JUnitStories {
 
   @Override
   protected List<String> storyPaths() {
-    return Arrays.asList("de/codecentric/jbehave/main_give_story.story");
+    return Arrays.asList("de/codecentric/jbehave/main_give_story.story", "de/codecentric/jbehave/stack_scenarios.story");
   }
 
   @Override
