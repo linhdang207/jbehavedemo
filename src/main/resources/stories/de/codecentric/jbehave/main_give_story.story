@@ -1,5 +1,6 @@
-Scenario:DEMO-30 main scenario
 GivenStories: de/codecentric/jbehave/Precondition.story
+
+Scenario:DEMO-30 main scenario
 Given an empty stack
 When the string Java is added
 And the string C++ is added
